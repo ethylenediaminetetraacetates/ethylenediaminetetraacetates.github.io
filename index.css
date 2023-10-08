@@ -44,7 +44,7 @@ body{
 
         margin-top: 10vmin;
 
-        animation-timing-function: cubic-bezier(0, 0, 0, 1);
+        animation-timing-function: ease-in-out;
     }
     50%{
         display: flex;
@@ -53,7 +53,7 @@ body{
 
         margin-top: 10vmin;
 
-        animation-timing-function: cubic-bezier(0, 0, 0, 1);
+        animation-timing-function: ease-in-out;
     }
     100%{
         display: flex;
@@ -62,7 +62,75 @@ body{
 
         margin-top: 10vmin;
 
-        animation-timing-function: cubic-bezier(0, 0, 0, 1);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes flexbox-elementshow {
+    0%{
+        text-align: center;
+
+        color: transparent;
+
+        display: flex;
+        height: 10vmin;
+        background-color: transparent;
+
+        margin-top: 5vmin;
+
+        animation-timing-function: ease-in-out;
+    }
+    50%{
+        text-align: center;
+
+        display: flex;
+        height: 10vmin;
+        background-color: transparent;
+
+        margin-top: 5vmin;
+
+        animation-timing-function: ease-in-out;
+    }
+    100%{
+        text-align: center;
+
+        display: flex;
+        height: 40vmin;
+        background-color: #242424;
+
+        margin-top: 5vmin;
+
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes flexbox-textshow {
+    0%{
+        text-align: left;
+
+        color: transparent;
+
+        margin-top: 0vmin;
+
+        animation-timing-function: ease-in-out;
+    }
+    75%{
+        text-align: left;
+
+        color: transparent;
+        
+        margin-top: -5vmin;
+
+        animation-timing-function: ease-in-out;
+    }
+    100%{
+        text-align: left;
+
+        color: #f0f0f0;
+
+        margin-top: 5vmin;
+
+        animation-timing-function: ease-in-out;
     }
 }
 
@@ -85,13 +153,15 @@ h1{
     font-size: 5vmin;
     font-family: "Varela Round", sans-serif;
     
-    transition-duration: 250ms;
+    transition-duration: 100ms;
 }
 
 .flexbox {
     display: flex;
-    height: 50vmin;
+    height: 100vmin;
     background-color: #282828;
+
+    overflow-y: scroll;
 
     margin-top: 10vmin;
     
@@ -104,4 +174,70 @@ h1{
     animation-duration: 500ms;
     animation-iteration-count: 1;
     animation-direction: normal;
+
+    transition-duration: 100ms;
+}
+
+.flexbox-element{
+    height: 40vmin;
+    background-color: #242424;
+
+    text-align: center;
+
+    color: transparent;
+
+    margin: 5vmin;
+    width: 40vw;
+
+    font-size: 2vmin;
+    font-family: "Varela Round", sans-serif;
+    
+    border-radius: 4vmin;
+    flex-wrap: wrap;
+
+    animation-delay: 0ms;
+    animation-play-state: running;
+    animation-name: flexbox-elementshow;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+    transition-duration: 100ms;
+}
+
+.flexbox-text{
+    text-align: left;
+
+    color: #f0f0f0;
+
+    margin: 5vmin;
+
+    font-size: 2vmin;
+    font-family: "Varela Round", sans-serif;
+
+    animation-delay: 0ms;
+    animation-play-state: running;
+    animation-name: flexbox-textshow;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+    transition-duration: 100ms;
+}
+
+::-webkit-scrollbar{
+    width: 0vmin;
+    height: 0vmin;
+}
+::-webkit-scrollbar-track{
+    background: #2c2c2c;
+}
+::-webkit-scrollbar-thumb{
+    background: #474747;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #4d4d4d;
+}
+::-webkit-scrollbar-corner{
+    background: #252525;
 }
