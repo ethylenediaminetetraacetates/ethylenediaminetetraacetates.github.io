@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
 body{
     background-color: #242424;
     margin: 0%;
+    overflow-x: hidden;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
 @keyframes pop{
     0%{
@@ -12,7 +13,7 @@ body{
         font-size: 2vmin;
         font-family: "Varela Round", sans-serif;
 
-
+        margin-top: 0vmin;
     }
     100%{
         color: #f0f0f0;
@@ -20,7 +21,18 @@ body{
         font-size: 5vmin;
         font-family: "Varela Round", sans-serif;
 
+        margin-top: 10vmin;
+    }
+}
 
+@keyframes minirotation{
+    0%{
+        transform:rotate(1deg);
+        animation-timing-function: ease-in-out;
+    }
+    100%{
+        transform:rotate(-1deg);
+        animation-timing-function: ease-in-out;
     }
 }
 
@@ -29,12 +41,14 @@ h1{
 }
 
 .big{
-    animation-delay: 0ms;
-    animation-play-state: running;
-    animation-name: pop;
-    animation-duration: 250ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+    animation-delay: 0ms,250ms;
+    animation-play-state: running,running;
+    animation-name: pop,minirotation;
+    animation-duration: 250ms,1000ms;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+
+    margin-top: 10vmin;
 
     color: #f0f0f0;
     text-align: center;
@@ -42,5 +56,4 @@ h1{
     font-family: "Varela Round", sans-serif;
     
     transition-duration: 250ms;
-
 }
