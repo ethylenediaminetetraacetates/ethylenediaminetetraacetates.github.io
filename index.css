@@ -6,6 +6,12 @@ body{
     overflow-x: hidden;
 }
 
+/*
+@media screen and (max-width: 3in) {
+    --gridsize: 100%;
+}
+*/
+
 @keyframes pop{
     0%{
         color: #242424;
@@ -225,6 +231,8 @@ h1{
 }
 
 .flexbox-element{
+    --gridsize: 40vw;
+
     height: 40vmin;
     background-color: #242424;
 
