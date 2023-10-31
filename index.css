@@ -195,7 +195,7 @@ h1{
 
     color: #f0f0f0;
     text-align: center;
-    font-size: max(10vmin,12pt);
+    font-size: max(5vmin,12pt);
     font-family: "Varela Round", sans-serif;
     
     transition-duration: 100ms;
@@ -236,7 +236,7 @@ h1{
     margin: 5vmin;
     width: 40vw;
 
-    font-size: max(4vmin,10pt);
+    font-size: max(3vmin,10pt);
     font-family: "Varela Round", sans-serif;
     
     border-radius: 2vmin;
@@ -259,7 +259,7 @@ h1{
 
     margin: 5vmin;
 
-    font-size: max(4vmin,10pt);
+    font-size: max(3vmin,10pt);
     font-family: "Varela Round", sans-serif;
 
     animation-delay: 0ms;
@@ -285,7 +285,7 @@ h1{
 
     border-radius:2vmin;
 
-    font-size:max(2vmin,10pt);
+    font-size:max(3vmin,10pt);
 
 
 
