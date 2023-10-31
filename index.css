@@ -195,7 +195,7 @@ h1{
 
     color: #f0f0f0;
     text-align: center;
-    font-size: max(5vmin,12pt);
+    font-size: max(10vmin,12pt);
     font-family: "Varela Round", sans-serif;
     
     transition-duration: 100ms;
@@ -236,7 +236,7 @@ h1{
     margin: 5vmin;
     width: 40vw;
 
-    font-size: 2vmin;
+    font-size: 4vmin;
     font-family: "Varela Round", sans-serif;
     
     border-radius: 2vmin;
