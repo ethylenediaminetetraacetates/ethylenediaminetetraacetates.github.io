@@ -236,7 +236,7 @@ h1{
     margin: 5vmin;
     width: 40vw;
 
-    font-size: 4vmin;
+    font-size: max(4vmin,10pt);
     font-family: "Varela Round", sans-serif;
     
     border-radius: 2vmin;
@@ -259,7 +259,7 @@ h1{
 
     margin: 5vmin;
 
-    font-size: max(2vmin,10pt);
+    font-size: max(4vmin,10pt);
     font-family: "Varela Round", sans-serif;
 
     animation-delay: 0ms;
